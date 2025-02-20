@@ -2279,6 +2279,13 @@ label {
         font-size: 56px;
     }
 
+    .accordion-heading {
+        &.active+.accordion-content {
+            height: 160px;
+            transition: 0.3s;
+        }
+    }
+
     .contact-icon {
         width: 60px;
         height: 60px;
@@ -2515,6 +2522,13 @@ label {
 
     h3 {
         font-size: 32px;
+    }
+
+    .accordion-heading {
+        &.active+.accordion-content {
+            height: 300px;
+            transition: 0.3s;
+        }
     }
 
     .hero-wrap::before {
