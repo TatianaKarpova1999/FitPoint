@@ -776,20 +776,13 @@ label {
     }
 }
 
-.reviews {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .reviews__wrapper {
     max-width: 1200px;
     margin: 0 auto;
     box-sizing: border-box;
     padding: 80px 30px;
 
-    background-size: 600px 600px;
+    background-size: 60px 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2596,10 +2589,7 @@ label {
         font-size: 24px;
     }
 
-    .pricing-icon {
-        width: 25px;
-        height: 25px;
-    }
+
 
     .pricing-info-list {
         grid-column-gap: 10px;
