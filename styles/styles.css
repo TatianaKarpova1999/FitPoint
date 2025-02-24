@@ -2571,7 +2571,7 @@ label {
     .reviews__wrapper {
         &::before {
             right: 20px;
-            top: 342px;
+            top: 302px;
             opacity: 0.1;
         }
     }
@@ -2580,10 +2580,35 @@ label {
         margin-bottom: 40px;
     }
 
+    .faqs-section {
+        padding: 60px 0;
+    }
+
     .accordion-heading {
         &.active+.accordion-content {
             height: 160px;
             transition: 0.3s;
+        }
+    }
+
+    .reviews__wrapper {
+        padding: 20px;
+
+    }
+
+    .reviews__wrapper {
+        & .section-title {
+            margin-bottom: 30px;
+        }
+    }
+
+    .slide {
+        & img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 20px;
         }
     }
 
