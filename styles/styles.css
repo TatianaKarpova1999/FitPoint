@@ -769,6 +769,26 @@ label {
     padding-right: 30px;
 }
 
+
+.reviews__wrapper {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        right: 100px;
+        top: 150px;
+
+
+        background-image: url("../images/reviews-icon.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.1;
+    }
+}
+
 .nav-link {
     color: #fff;
     text-underline-offset: 7px;
@@ -864,7 +884,8 @@ label {
     max-width: 1200px;
     margin: 0 auto;
     box-sizing: border-box;
-    padding: 80px 30px;
+    padding: 80px 70px;
+    position: relative;
 
     background-size: 60px 60px;
     display: flex;
@@ -874,6 +895,21 @@ label {
 
     & .section-title {
         margin-bottom: 70px;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        right: 69px;
+        top: 153px;
+        right: 20px;
+        top: 150px;
+
+
+        background-image: url("../images/reviews-icon.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.1;
     }
 }
 
@@ -894,6 +930,7 @@ label {
     display: flex;
     flex-direction: column;
     align-items: start;
+
 }
 
 .reviews__title {
@@ -910,6 +947,7 @@ label {
     text-align: center;
     max-width: 1000px;
     color: #fff;
+
 
     @media (max-width: 767px) {
         font-size: 18px;
@@ -1173,6 +1211,7 @@ label {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 
@@ -1664,6 +1703,7 @@ label {
     font-size: 22px;
     font-weight: 600;
     line-height: 1.3em;
+    text-align: center;
 }
 
 .pricing-info-list {
@@ -2307,23 +2347,19 @@ label {
     }
 
     .about-content {
-        &.testimonial-tab-info {
-            flex-flow: column;
-        }
+
 
         & .testimonial-description {
-            max-width: 100%;
+            max-width: 1000px;
             margin-bottom: 40px;
         }
 
         & .about-img {
             max-width: 100%;
-
-            height: 500px;
-            width: 90%;
+            width: 100%;
             object-fit: cover;
             margin: 0 auto;
-            margin-top: 50px;
+
         }
     }
 
@@ -2521,12 +2557,43 @@ label {
         font-size: 56px;
     }
 
+    .reviews__content {
+        grid-template-columns: 1fr;
+    }
+
+    .about-content {
+        &.testimonial-tab-info {
+            flex-flow: column;
+        }
+    }
+
+
+    .reviews__wrapper {
+        &::before {
+            right: 20px;
+            top: 342px;
+            opacity: 0.1;
+        }
+    }
+
     .accordion-heading {
         &.active+.accordion-content {
             height: 160px;
             transition: 0.3s;
         }
     }
+
+    .about-content {
+        & .about-img {
+            max-width: 70%;
+            width: 100%;
+            object-fit: cover;
+            margin: 0 auto;
+            height: 400px;
+            margin-top: 60px;
+        }
+    }
+
 
     .contact-icon {
         width: 60px;
@@ -2629,9 +2696,18 @@ label {
     }
 
     .hero-title {
-        margin-bottom: 15px;
+        margin-bottom: 50px;
         font-size: 50px;
         max-width: 400px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            background-color: #fff;
+            bottom: -30px;
+        }
     }
 
     .hero-description-wrap {
@@ -2655,6 +2731,8 @@ label {
         grid-column-gap: 50px;
         grid-row-gap: 50px;
         grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
     }
 
     .pricing-price-wrap {
@@ -2766,9 +2844,34 @@ label {
         font-size: 32px;
     }
 
+    .pricing-section {
+        padding: 30px 10px;
+    }
+
+    .section-spacing {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .no-margin-bottom {
+        margin-bottom: 20px;
+    }
+
+    .section-title {
+        margin-bottom: 0;
+    }
+
+
+    .about-content {
+        & .about-img {
+            max-width: 100%;
+
+        }
+    }
+
     .accordion-heading {
         &.active+.accordion-content {
-            height: 300px;
+            height: 200px;
             transition: 0.3s;
         }
     }
@@ -2832,7 +2935,17 @@ label {
     }
 
     .hero-title {
-        font-size: 30px;
+        font-size: 40px;
+        margin-bottom: 60px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            background-color: #fff;
+            bottom: -30px;
+        }
     }
 
     .classes-info {
