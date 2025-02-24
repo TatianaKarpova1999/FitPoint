@@ -37,7 +37,7 @@
             <a href="/" aria-current="page" class="nav-link w-nav-link">Home</a
             ><a href="/about/" class="nav-link w-nav-link">About the app</a>
             <a href="/blog/" class="nav-link w-nav-link">Blog</a>
-            <a href="/lessons/" class="nav-link w-nav-link">Lessons</a>
+            <a href="/collection/" class="nav-link w-nav-link">Collection</a>
             <a href="/contact/" class="nav-link w-nav-link w--current"
               >Contact</a
             >
@@ -61,9 +61,9 @@
       <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
     </header>
     <main>
-      <section class="about-detail-section section-spacing-bottom">
+      <section class="section-spacing-bottom contact">
         <div class="w-layout-blockcontainer container-small w-container">
-          <div class="about-detail-wrap">
+          <div class="contact-detail-wrap">
             <div class="w-layout-blockcontainer container w-container">
               <div class="w-layout-grid grid-about-hero animation">
                 <div id="w-node-_648ca808-2221-10bc-2302-92d06b0249d7-77ec0b38">
@@ -77,10 +77,67 @@
                     >
                       <span class="about-hero-span">Contact</span>
                     </h1>
+                    <p class="testimonial-description">
+                      If you have any questions, feel free to reach out to us!
+                      Our team is always ready to assist you with any inquiries
+                      regarding our services, subscriptions, or technical
+                      support. Contact us anytime, and we’ll be happy to help.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+          <form
+            class="contacts__form form"
+            action="thanks_form.php"
+            method="post"
+          >
+            <ul class="form__list">
+              <li class="form__item">
+                <label class="visually-hidden" for="phone">Name</label>
+                <input
+                  class="form__input"
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                  required
+                />
+              </li>
+              <li class="form__item">
+                <label class="visually-hidden" for="phone">Email</label>
+                <input
+                  class="form__input"
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  required
+                />
+              </li>
+              <li class="form__item">
+                <input
+                  class="form__checkbox"
+                  type="checkbox"
+                  id="agreement"
+                  name="privacy"
+                  value="on"
+                  required
+                />
+                <label class="form__agreement" for="agreement"
+                  >I accept
+                  <a href="/privacy-policy.html">Privacy policy</a></label
+                >
+              </li>
+            </ul>
+            <button class="button primary-button form__button" type="submit">
+              Submit
+            </button>
+          </form>
+        </div>
+      </section>
+      <section class="contact-detail-section section-spacing-bottom">
+        <div class="w-layout-blockcontainer container-small w-container">
+          <div class="contact-detail-wrap">
             <div class="w-layout-grid grid-contact-hero animation">
               <div
                 id="w-node-b07aab31-e103-fdfb-f9db-a2cd6ed06b8c-23f79078"
@@ -139,90 +196,6 @@
                     >
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="faqs-section section-spacing faq-contact">
-        <div class="w-layout-blockcontainer inner-container w-container">
-          <div class="section-title text-center">
-            <h2 class="no-margin-bottom">Frequently asked questions</h2>
-          </div>
-          <div class="faqs-wrap">
-            <div class="accordion-item">
-              <div class="accordion-heading">
-                <h2 class="accordion-title">
-                  How can I contact customer support?
-                </h2>
-                <div class="accordion-icon-wrap">
-                  <div class="accordion-icon-plus open"></div>
-                  <div class="accordion-icon-minus open"></div>
-                </div>
-              </div>
-              <div class="accordion-content">
-                <p class="accordion-description">
-                  You can reach our customer support team via email, phone, or
-                  live chat on our website. Our team is available 24/7 to assist
-                  you.
-                </p>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <div class="accordion-heading">
-                <h3 class="accordion-title">
-                  How do I contact my personal trainer?
-                </h3>
-                <div class="accordion-icon-wrap">
-                  <div class="accordion-icon-plus"></div>
-                  <div class="accordion-icon-minus"></div>
-                </div>
-              </div>
-              <div class="accordion-content">
-                <p class="accordion-description">
-                  You can contact your personal trainer through the training
-                  app's messaging feature or by email. If you need urgent
-                  assistance, please check their availability in the app.
-                </p>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <div class="accordion-heading">
-                <h3 class="accordion-title">
-                  Can I schedule a call with my trainer?
-                </h3>
-                <div class="accordion-icon-wrap">
-                  <div class="accordion-icon-plus"></div>
-                  <div class="accordion-icon-minus"></div>
-                </div>
-              </div>
-              <div class="accordion-content">
-                <p class="accordion-description">
-                  Yes! You can schedule a call with your trainer through the app
-                  or by contacting them directly. Many trainers offer virtual
-                  consultations for additional support.
-                </p>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <div class="accordion-heading">
-                <h3 class="accordion-title">
-                  What if I don’t receive a response from support?
-                </h3>
-                <div class="accordion-icon-wrap">
-                  <div class="accordion-icon-plus"></div>
-                  <div class="accordion-icon-minus"></div>
-                </div>
-              </div>
-              <div class="accordion-content">
-                <p class="accordion-description">
-                  If you don’t receive a response within 24 hours, please try
-                  reaching out via another contact method, such as phone or live
-                  chat. We aim to respond as quickly as possible.
-                </p>
               </div>
             </div>
           </div>
@@ -287,7 +260,7 @@
                 <a href="/" aria-current="page" class="footer-link">Home</a
                 ><a href="/about/" class="footer-link">About the app</a
                 ><a href="/blog/" class="footer-link">Blog</a
-                ><a href="/lessons/" class="footer-link">Lessons</a
+                ><a href="/lessons/" class="footer-link">Collection</a
                 ><a href="/contact/" class="footer-link w--current">Contact</a>
               </div>
             </div>

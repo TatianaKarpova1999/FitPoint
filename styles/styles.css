@@ -662,7 +662,8 @@ label {
 .no-margin-bottom {
     margin-bottom: 0;
     color: #fff;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
+    z-index: 1;
 
     &.active {
         animation: top 0.3s;
@@ -1087,7 +1088,8 @@ label {
 }
 
 .section-spacing-bottom {
-    padding-bottom: 60px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .accordion-description {
@@ -1135,6 +1137,37 @@ label {
     }
 }
 
+.contact {
+    & .form__agreement {
+        color: #fff;
+
+
+        a {
+            color: #fff;
+        }
+    }
+
+    & .button {
+        color: #fff;
+        border-color: #fff;
+        backdrop-filter: blur(20px);
+    }
+
+    & .form__input {
+        background-color: #fff;
+    }
+
+    & .form__item {
+        color: #333;
+    }
+
+}
+
+.image-conainer {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 
 
 .faq-contact {
@@ -1226,8 +1259,13 @@ label {
 }
 
 .blog-link {
-    color: #cb4300;
-
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    max-width: fit-content;
+    padding: 10px;
+    min-width: 200px;
+    text-align: center;
 }
 
 .button-arrow-round:where(.w-variant-25f66e81-29c6-b521-4cbc-07fcdf0f6b87) {
@@ -1252,6 +1290,13 @@ label {
 
 .blog {
     background-image: linear-gradient(#0000008e, #0000007c), url("../images/blog-bg.jpg");
+    background-position: 0 0, 50%;
+    background-repeat: repeat, no-repeat;
+    background-size: auto, cover;
+}
+
+.contact {
+    background-image: linear-gradient(#0000008e, #0000007c), url("../images/contact-bg.jpg");
     background-position: 0 0, 50%;
     background-repeat: repeat, no-repeat;
     background-size: auto, cover;
@@ -1350,18 +1395,32 @@ label {
     height: 100%;
     background-color: #f7f7f7;
     border-radius: 10px;
+
+    & .button-arrow {
+        width: 100%;
+    }
+
+    & .button-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #00000073;
+        z-index: 1;
+    }
 }
 
 .classes-title {
     margin-bottom: 0;
     font-size: 28px;
-}
-
-.classes-image-wrap {
-    border-radius: var(--border-radius--sm);
-    position: relative;
-    overflow: hidden;
-    height: 300px;
+    z-index: 1;
 }
 
 .center {
@@ -1384,10 +1443,14 @@ label {
 }
 
 .classes-image {
-    border-radius: var(--border-radius--sm);
+
     object-fit: cover;
     width: 100%;
     height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+
 }
 
 .about-img {
@@ -1504,7 +1567,7 @@ label {
     justify-content: center;
     row-gap: 40px;
     text-align: center;
-    max-width: 900px;
+    max-width: 1300px;
 
     &.testimonial-tab-info {
         align-items: center;
@@ -1704,7 +1767,7 @@ label {
 .w-dyn-item {
     padding: 40px;
     position: relative;
-    background-color: #141414;
+
 }
 
 .blog-image-wrap {
@@ -1720,7 +1783,8 @@ label {
 
 .blog-title {
     margin-bottom: 0;
-    font-size: 22px;
+    font-size: 25px;
+    color: #fb0000;
 }
 
 .blog-info {
@@ -1753,11 +1817,15 @@ label {
 }
 
 .contact-item.two {
-    background-color: #426c40;
+    background: linear-gradient(225deg, rgb(0, 255, 235), rgb(0, 118, 255));
 }
 
 .contact-item.three {
     background-color: var(--color--gray-4);
+}
+
+.contact-detail-section {
+    padding: 80px 20px;
 }
 
 .contact-icon {
@@ -1811,7 +1879,7 @@ label {
     grid-column-gap: 30px;
     grid-row-gap: 30px;
     grid-template-rows: auto;
-    grid-template-columns: 1fr .5fr;
+    grid-template-columns: 1fr;
     align-items: start;
 }
 
@@ -1821,9 +1889,13 @@ label {
     }
 }
 
-.lessons {
+.collection {
     .grid-about-hero {
         display: flex;
+    }
+
+    & .w-dyn-item {
+        padding: 0;
     }
 }
 
@@ -1891,6 +1963,11 @@ label {
     & .container {
         margin: 0;
     }
+}
+
+.contact-detail-wrap {
+    display: flex;
+    flex-direction: column;
 }
 
 .title-container {
@@ -1984,6 +2061,7 @@ label {
     background-color: #fff;
 }
 
+
 .about-social-title {
     margin-bottom: 40px;
     font-size: 30px;
@@ -2068,9 +2146,6 @@ label {
         padding-bottom: 60px;
     }
 
-    .section-spacing-bottom {
-        padding-bottom: 60px;
-    }
 
     .hero-wrap {
         padding-top: 100px;
@@ -2146,10 +2221,6 @@ label {
 
     .section-spacing {
         padding-top: 60px;
-        padding-bottom: 60px;
-    }
-
-    .section-spacing-bottom {
         padding-bottom: 60px;
     }
 
