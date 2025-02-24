@@ -2576,6 +2576,10 @@ label {
         }
     }
 
+    .slide-info {
+        margin-bottom: 40px;
+    }
+
     .accordion-heading {
         &.active+.accordion-content {
             height: 160px;
